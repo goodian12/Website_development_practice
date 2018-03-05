@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <scipt>
+
+  </script>
+  <style type="text/css">
+  .nav-bar{
+    height: 114px;
+    width: 100%;
+
+  }
+  ul{
+    list-style-type: none; /*拿掉 ul bullets */
+  }
+  .li-head{
+    float: left; /* 取消ul中間的block */
+
+  }
+  li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #dddddd;
+  }
+
+  .background-head{
+    background-color: #CCFF99;
+  }
+
+  .head-signup{
+    text-align: right;
+    color: white;
+    display: inline-block;
+    padding: 14px 16px;
+    background-color: #32CBCB;
+    border-color: #32CBCB;
+  }
+  .head-signup:hover{
+    background-color:white;
+    color:#32CBCB;
+    border:2px solid #32CBCB;
+  }
+  .head-topic{
+    margin-left: 60px;
+
+  }
+  input{
+    position: relative;
+    display:block;
+    float: inherit;
+    margin-top: auto;
+    padding: 0px;
+
+  }
+
+  .section-3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #DDDDDD;
+  }
+  .section-3-content{
+    text-align:center;
+    margin:10px;
+    vertical-align:top;
+  }
+  </style>
+
+
+  <body>
+    <div class="background-head">
+      <div class="nav-bar">
+        <a><img src=""></a>
+        <ul>
+          <li class="li-head"><a href="">master</a></li>
+          <li class="li-head"><a href="">distribute</a></li>
+          <li class="li-head"><a href="">Desktop app</a></li>
+          <li class="li-head"><a href="">Pricing</a></li>
+          <li class="li-head"><a href="">Help</a></li>
+          <li class="li-head"><a href="">Blog</a></li>
+        </ul>
+        <a href="" class="head-signup">Sign Up</a>
+        <a href="" class="head-signup">Sign In </a>
+      </div>
+
+      <div>
+        <h1 align="center">Master track</h1>
+        <div style="display:inline">
+          <h3 class="head-topic">Professional<br> audio Mastering<br>__</h3>
+          <p class="head-topic">Sound like a pro.<br> Instant results at a fraction of the <br>cost of studio mastering.<p>
+          <input type="file" class="input-file"></input>
+        </div>
+      </div>
+      <div style="text-align:center;color:black">
+        Drag your type here
+      </div>
+      <div style="text-align:center;color:black">
+        Or drag on the + here
+      </div>
+      <div style="background-color:white;text-align:center;padding:30px">
+        <span>Sound like a pro</span><span style="color:blue;">without paying studio rates</span> or <span style="color:blue;">learning complex plug-ins</span>
+      </div>
+    </div>
+
+    <!-- introduction section -->
+    <div class="section-3">
+      <div style="width:32.333%;display:inline-block">
+        <h3 style="text-align:center">Instant</h3>
+        <p class="section-3-content">Drag-and-drop your mix-down to get an instant mastered preview which you can download in minutes. Tweak a few controls to refine your sound, and download!</p>
+      </div>
+      <div style="width:32.333%;display:inline-block">
+        <h3 style="text-align:center">Affordable</h3>
+        <p class="section-3-content">Get free mastering for 192kbps MP3s (perfect for web) or upgrade to a subscription plan for uncompressed WAV files.</p>
+      </div>
+      <div style="width:32.333%;display:inline-block">
+        <h3 style="text-align:center">Amazing sound</h3>
+        <p class="section-3-content">Your music is delivered with polish and balance, ready to play alongside the best and biggest sounds. Share with confidence.</p>
+      </div>
+    </div>
+
+    <!-- Process Introduction -->
+    <div>
+      <h1 style="padding-top:30px;text-align:center">Behind the Scene</h1>
+    </div>
+    <!-- Time Process Block -->
+    <div on-enter="ShowTimeLineSection();">
+      <div>
+        <div style="padding-top:50px" >
+          <div style="display:inline-block;vertical-align:center;;width:49%">
+            <img src="https://www.landr.com/img/home/Classifying_360x140.gif?version=2.58.6" style="margin-left:20px;text-align:center" >
+          </div>
+          <div style="display:inline-block;width:49%;vertical-align:center">
+              <h3 style="text-align:center;margin-top:0px">Indentified Production style</h3>
+              <p style="margin:20px">LANDR looks at your track's production style, referencing a massive library of music genres and styles to create a unique fingerprint.</p>
+          </div>
+        </div>
+
+          <div style="padding-top:90px">
+            <div style="display:inline-block;width:49%;vertical-align:center">
+                <h3 style="text-align:center;margin-top:0px">Pre-precessing</h3>
+                <p style="margin:20px">Based on what it's learned in step one, LANDR selects a unique set of audio post-production processors (think compressors, EQs, etc.) targeted just for your track.</p>
+            </div>
+            <div style="display:inline-block;vertical-align:center;;width:49%">
+              <img src="https://www.landr.com/img/home/Modelling_360x140.gif?version=2.58.6" style="margin-left:20px;text-align:center" >
+            </div>
+          </div>
+
+        <div>
+          <div style="padding-top:90px" >
+            <div style="display:inline-block;vertical-align:center;;width:49%">
+              <img src="https://www.landr.com/img/home/Mastering_360x140.gif?version=2.58.6" style="margin-left:20px;text-align:center" >
+            </div>
+            <div style="display:inline-block;width:49%;vertical-align:center">
+                <h3 style="text-align:center;margin-top:0px">Processing and Rendering</h3>
+                <p style="margin:20px">Finally, LANDR's mastering software uses its machine learning to adjust all the knobs and dials to bring out the best from your track.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video section -->
+    <div>
+      <ul>
+        <li>Electronic</li>
+        <li>Indle</li>
+        <li>R&B</li>
+        <li>Song Writer</li>
+      </ul>
+    </div>
+  </body>
+
+</html>
