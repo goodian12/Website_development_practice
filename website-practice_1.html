@@ -20,7 +20,7 @@
     float: left; /* 取消ul中間的block */
 
   }
-  li a{
+  .li-head-content{
     display: block;
     color: black;
     text-align: center;
@@ -28,7 +28,7 @@
     text-decoration: none;
   }
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
+  .li-head-content:hover {
     background-color: #dddddd;
   }
 
@@ -72,6 +72,25 @@
     margin:10px;
     vertical-align:top;
   }
+
+  .VideoSection{
+    width:50%;
+    padding-top: 50px;
+    display: inline-block;
+
+  }
+
+  .VideoSectionList a{
+    margin:15px;
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+  }
+
+  .VideoSectionList:hover{
+    text-decoration: underline;
+  }
   </style>
 
 
@@ -80,12 +99,12 @@
       <div class="nav-bar">
         <a><img src=""></a>
         <ul>
-          <li class="li-head"><a href="">master</a></li>
-          <li class="li-head"><a href="">distribute</a></li>
-          <li class="li-head"><a href="">Desktop app</a></li>
-          <li class="li-head"><a href="">Pricing</a></li>
-          <li class="li-head"><a href="">Help</a></li>
-          <li class="li-head"><a href="">Blog</a></li>
+          <li class="li-head"><a href="" class="li-head-content">master</a></li>
+          <li class="li-head"><a href="" class="li-head-content">distribute</a></li>
+          <li class="li-head"><a href="" class="li-head-content">Desktop app</a></li>
+          <li class="li-head"><a href="" class="li-head-content">Pricing</a></li>
+          <li class="li-head"><a href="" class="li-head-content">Help</a></li>
+          <li class="li-head"><a href="" class="li-head-content">Blog</a></li>
         </ul>
         <a href="" class="head-signup">Sign Up</a>
         <a href="" class="head-signup">Sign In </a>
@@ -112,15 +131,15 @@
 
     <!-- introduction section -->
     <div class="section-3">
-      <div style="width:32.333%;display:inline-block">
+      <div style="width:32.333%;display:inline-block;vertical-align:top">
         <h3 style="text-align:center">Instant</h3>
         <p class="section-3-content">Drag-and-drop your mix-down to get an instant mastered preview which you can download in minutes. Tweak a few controls to refine your sound, and download!</p>
       </div>
-      <div style="width:32.333%;display:inline-block">
+      <div style="width:32.333%;display:inline-block;vertical-align:top">
         <h3 style="text-align:center">Affordable</h3>
         <p class="section-3-content">Get free mastering for 192kbps MP3s (perfect for web) or upgrade to a subscription plan for uncompressed WAV files.</p>
       </div>
-      <div style="width:32.333%;display:inline-block">
+      <div style="width:32.333%;display:inline-block;vertical-align:top">
         <h3 style="text-align:center">Amazing sound</h3>
         <p class="section-3-content">Your music is delivered with polish and balance, ready to play alongside the best and biggest sounds. Share with confidence.</p>
       </div>
@@ -167,14 +186,41 @@
       </div>
     </div>
     <!-- Video section -->
-    <div>
-      <ul>
-        <li>Electronic</li>
-        <li>Indle</li>
-        <li>R&B</li>
-        <li>Song Writer</li>
-      </ul>
+    <div style="background-color:#003C9D;">
+      <div style="width:32%;display:inline-block">
+        <ul class="VideoSection">
+          <li class="VideoSectionList"><a href="">Electronic</a><hr></li>
+          <li class="VideoSectionList"><a href="">Indle</a><hr></li>
+          <li class="VideoSectionList"><a href="">R&B</a><hr></li>
+          <li class="VideoSectionList" style="padding-bottom:50px"><a href="">Song Writer</a><hr></li>
+        </ul>
+      </div>
+      <div style="display:inline-block;width:60%;vertical-align:top;">
+        <div style="padding-top:30px">
+          <h2 style="padding-top:30px;color:white;margin-left:10px">Tiga</h2>
+          <p style="margin:20px;padding-top:20px;padding-bottom:50px;color:white;">"LANDR can actually help you finish your music… that critical, final, elusive, mysterious step has been demystified. And the results speak for themselves."</p>
+        </div>
+      </div>
     </div>
+
+    <!-- Pracing Section -->
+    <div>
+      <div style="padding-top:20px;padding-bottom:20px;text-align:center">
+        <a style="color:blue;">TRY LANDR Free</a><span> on your music</span>
+      </div>
+      <div>
+        <h1 style="margin:20px;text-align:center">Intelligent mastering. Incredibly affordable rates.</h1>
+        <a style="margin:20px" onclick="SwitchOn();"><span style="color:#04303e;text-align:left">Master and Release</span></a>
+        <a style="margin:20px" onclick="SwitchOff();"><span>Release Only</span></a><hr>
+        <div class="Swtich-content">
+          <div></div>
+          <div></div>
+        </div>
+
+
+      </div>
+    </div>
+
   </body>
 
 </html>
