@@ -4,7 +4,30 @@
   <head>
     <meta charset="utf-8">
   </head>
-  <scipt>
+  <script>
+    function $(id){
+      return document.getElementById(id);
+    }
+
+    function change(index){
+      let fir=$("first");
+      let sec=$("second");
+      let pri=$("price");
+      let pri1=$("price1");
+
+      if (index==0){
+      fir.className="title1";
+      pri.className="appear";
+      sec.className="title2";
+      pri1.className="disappear";
+      }else if(index==1){
+      fir.className="title2";
+      pri.className="disappear";
+      sec.className="title1";
+      pri1.className="appear";
+      }
+    }
+
 
   </script>
   <style type="text/css">
@@ -90,6 +113,22 @@
 
   .VideoSectionList:hover{
     text-decoration: underline;
+  }
+
+  .title1{
+    color:#003C9D;
+    font-weight:bold;
+    text-decoration: underline;
+    text-decoration-color: #003C9D;
+  }
+  .title2{
+  }
+
+  .appear{
+  }
+
+  .disappear{
+    display: none;
   }
   </style>
 
@@ -210,16 +249,132 @@
       </div>
       <div>
         <h1 style="margin:20px;text-align:center">Intelligent mastering. Incredibly affordable rates.</h1>
-        <a style="margin:20px" onclick="SwitchOn();"><span style="color:#04303e;text-align:left">Master and Release</span></a>
-        <a style="margin:20px" onclick="SwitchOff();"><span>Release Only</span></a><hr>
+        <a id="first"style="margin:20px" onclick="change(0);" class="title1">Master and Release</a>
+        <a id="second"style="margin:20px" onclick="change(1);"class="title2">Release Only</a><hr>
         <div class="Swtich-content">
-          <div></div>
-          <div></div>
+          <div id="price"class="appear">
+            <div style="padding-top:70px">
+              <div style="width:32.32%;display:inline-block;border-style:outset;">
+                <div style="text-align:center;margin:15px;padding-top:15px">
+                  <div style="background-color:#003C9D;color:white">
+                    <h3>BASIC</h3>
+                    <p>quick, dirty, compression</p>
+                    <h3>$4/mo</h3>
+                    <p><br>$48/yr - SAVE 32%</br></p>
+                  </div>
+                  <buttom><a href="">Go Basic</a></buttom>
+                  <ul style="text-align:center;padding-left:0px">
+                    <li>LO-MP3 Unlimited</li>
+                    <li>HI MP3 $4.99</li>
+                    <li>WAV $8.99<a>10%OFF</a></li>
+                    <li>HD WAV $17.99<a>10%OFF</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div style="width:32.32%;display:inline-block;border-style:outset;">
+                <div style="text-align:center;margin:15px;padding-top:15px">
+                  <div style="background-color:#003C9D;color:white;">
+                    <h3>Advance</h3>
+                    <p>quick, dirty, compression</p>
+                    <h3>$9/mo</h3>
+                    <p><br>$48/yr - SAVE 32%</br></p>
+                  </div>
+                  <buttom><a href="">Go Advance</a></buttom>
+                  <ul style="text-align:center;padding-left:0px">
+                    <li>LO-MP3 Unlimited</li>
+                    <li>HI MP3 $4.99</li>
+                    <li>WAV $8.99<a>10%OFF</a></li>
+                    <li>HD WAV $17.99<a>10%OFF</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div style="width:32.32%;display:inline-block;border-style:outset;">
+                <div style="text-align:center;margin:15px;padding-top:15px;">
+                  <div style="background-color:#003C9D;color:white">
+                    <h3>Pro</h3>
+                    <p>The gold standard</p>
+                    <h3>$25/mo</h3>
+                    <p><br>$299/yr - SAVE 32%</br></p>
+                  </div>
+                  <buttom><a href="">Go Pro</a></buttom>
+                  <ul style="text-align:center;padding-left:0px">
+                    <li>LO-MP3 Unlimited</li>
+                    <li>HI MP3 $4.99</li>
+                    <li>WAV $8.99<a>10%OFF</a></li>
+                    <li>HD WAV $17.99<a>10%OFF</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div style="text-align:center">
+              <h3>Now included with mastering subscriptions:</h3>
+              <ul style="padding-left:0px;padding-bottom:80px">
+                <li><span>Unlimited distribution (WAV)</span></li>
+                <li><span>Get your music on iTunes, Spotify, Google Play + all other major stores</span></li>
+                <li><span>Keep 100% of your royalties and rights</span></li>
+                <li><span>Stats and analytics to help grow your fanbase</span></li>
+              </ul>
+            </div>
+          </div>
+          <div id="price1"class="disappear" style="">
+            <div style="padding-top:70px">
+                <div style="width:32.32%;display:inline-block;border-style:outset;">
+                  <div style="text-align:center;margin:15px;padding-top:15px;background-color:#DDDDDD">
+                    <h3>10 track</h3>
+                    <p>quick, dirty, compression</p>
+                    <h3>1/mon</h3>
+                    <p><br>$48/yr - SAVE 32%</br></p>
+                    <buttom><a href="">Go Basic</a></buttom>
+                    <ul style="text-align:center;padding-left:0px">
+                      <li>LO-MP3 Unlimited</li>
+                      <li>HI MP3 $4.99</li>
+                      <li>WAV $8.99<a>10%OFF</a></li>
+                      <li>HD WAV $17.99<a>10%OFF</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div style="width:32.32%;display:inline-block;border-style:outset;">
+                  <div style="text-align:center;margin:15px;padding-top:15px;background-color:#DDDDDD">
+                    <h3>30 track</h3>
+                    <p>quick, dirty, compression</p>
+                    <h3>2/mon</h3>
+                    <p><br>$48/yr - SAVE 32%</br></p>
+                    <buttom><a href="">Go Basic</a></buttom>
+                    <ul style="text-align:center;padding-left:0px">
+                      <li>LO-MP3 Unlimited</li>
+                      <li>HI MP3 $4.99</li>
+                      <li>WAV $8.99<a>10%OFF</a></li>
+                      <li>HD WAV $17.99<a>10%OFF</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div style="width:32.32%;display:inline-block;border-style:outset;">
+                  <div style="text-align:center;margin:15px;padding-top:15px;background-color:#DDDDDD">
+                    <h3>Unlimited</h3>
+                    <p>The gold standard</p>
+                    <h3>4/mom</h3>
+                    <p><br>$299/yr - SAVE 32%</br></p>
+                    <buttom><a href="">Go Basic</a></buttom>
+                    <ul style="text-align:center;padding-left:0px">
+                      <li>LO-MP3 Unlimited</li>
+                      <li>HI MP3 $4.99</li>
+                      <li>WAV $8.99<a>10%OFF</a></li>
+                      <li>HD WAV $17.99<a>10%OFF</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div style="text-align:center">
+                <h3>Included with distribution subscriptions:</h3>
+                <ul style="padding-left:0px;padding-bottom:80px">
+                  <li><span>Get your music on iTunes, Spotify, Google Play + all other major stores</span></li>
+                  <li><span>Keep 100% of your royalties and rights</span></li>
+                  <li><span>Stats and analytics to help grow your fanbase</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-      </div>
-    </div>
 
   </body>
 
