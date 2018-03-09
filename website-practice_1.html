@@ -90,6 +90,13 @@
 
   </script>
   <style type="text/css">
+
+  body{
+    font-family: MyHelvetica ;
+    src: local(MyHelvetica),url(MyHelvetica.woff);
+
+  }
+
   .nav-bar{
     height: 114px;
     width: 100%;
@@ -118,6 +125,22 @@
     background-color: #CCFF99;
   }
 
+  .input-file{
+    background-color: #4CAF50; /* Green */
+    border-radius: 50%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: auto;  /* 左右置中 */
+    margin-right: auto;
+    width:200px;
+    height: 200px;
+    vertical-align: center;
+  }
+
   .head-signup{
     text-align: right;
     color: white;
@@ -132,15 +155,7 @@
     border:2px solid #32CBCB;
   }
   .head-topic{
-    margin-left: 60px;
-
-  }
-  input{
-    position: relative;
-    display:block;
-    float: inherit;
-    margin-top: auto;
-    padding: 0px;
+    padding-left: 60px;
 
   }
 
@@ -200,6 +215,17 @@
       height: 100%;
   }
 
+  .img-li{
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .footer-li {
+    padding:6px 8px;
+    color:white;
+  }
   </style>
 
 
@@ -221,10 +247,14 @@
 
       <div>
         <h1 align="center">Master track</h1>
-        <div style="display:inline">
-          <h3 class="head-topic">Professional<br> audio Mastering<br>__</h3>
-          <p class="head-topic">Sound like a pro.<br> Instant results at a fraction of the <br>cost of studio mastering.<p>
-          <input type="file" class="input-file"></input>
+        <div style="text-align:center;padding-top:50px">
+          <div style="float:left ">
+            <h3 class="head-topic">Professional<br> audio Mastering<br>__</h3>
+            <p class="head-topic">Sound like a pro.<br> Instant results at a fraction of the <br>cost of studio mastering.</p>
+          </div>
+          <div style="display:inline-block;vertical-align:top;padding-bottom:80px;padding-right:250px">
+            <input type="file" class="input-file" placeholder="Choose file" disabled="disabled"></input>
+          </div>
         </div>
       </div>
       <div style="text-align:center;color:black">
@@ -295,7 +325,7 @@
       </div>
     </div>
     <!-- Video section -->
-    <div style="background-color:#003C9D;">
+    <div style="background-color:#032F3E;">
       <div style="width:32%;display:inline-block">
         <ul class="VideoSection">
           <li class="VideoSectionList"><a href="">Electronic</a><hr></li>
@@ -326,7 +356,7 @@
             <div style="padding-top:70px">
               <div style="width:32.32%;display:inline-block;border-style:outset;">
                 <div style="text-align:center;margin:15px;padding-top:15px">
-                  <div style="background-color:#003C9D;color:white">
+                  <div style="background-color:#032F3E;;color:white">
                     <h3>BASIC</h3>
                     <p>quick, dirty, compression</p>
                     <h3>$4/mo</h3>
@@ -343,7 +373,7 @@
               </div>
               <div style="width:32.32%;display:inline-block;border-style:outset;">
                 <div style="text-align:center;margin:15px;padding-top:15px">
-                  <div style="background-color:#003C9D;color:white;">
+                  <div style="background-color:#032F3E;;color:white;">
                     <h3>Advance</h3>
                     <p>quick, dirty, compression</p>
                     <h3>$9/mo</h3>
@@ -360,7 +390,7 @@
               </div>
               <div style="width:32.32%;display:inline-block;border-style:outset;">
                 <div style="text-align:center;margin:15px;padding-top:15px;">
-                  <div style="background-color:#003C9D;color:white">
+                  <div style="background-color:#032F3E;;color:white">
                     <h3>Pro</h3>
                     <p>The gold standard</p>
                     <h3>$25/mo</h3>
@@ -498,6 +528,66 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+    </div>
+
+    <!-- Brand section -->
+
+    <div style="text-align:center;padding-top:10px">
+      <ul>
+        <li style="display:inline-block"><img src="https://www.landr.com/img/partners/resident_advisor.png?version=2.61.0" class="img-li"></img></li>
+        <li style="display:inline-block"><img src="https://www.landr.com/img/partners/turbo.png?version=2.61.0" class="img-li"></img></li>
+        <li style="display:inline-block"><img src="https://www.landr.com/img/partners/fast_company.png?version=2.61.0" class="img-li"></img></li>
+        <li style="display:inline-block"><img src="https://www.landr.com/img/partners/music_radar.png?version=2.61.0" class="img-li"></img></li>
+        <li style="display:inline-block"><img src="https://www.landr.com/img/partners/vice.png?version=2.61.0" class="img-li"></img></li>
+      </ul>
+    </div>
+
+    <!-- footer section -->
+
+    <div style="color:white;background-color:#032F3E;padding-bottom:80px">
+      <div style="width:20%;display:inline-block;padding-top:40px">
+        <ul>
+          <li style="color:white;padding:6px 8px"><a>LANDR</a></li>
+          <li class="footer-li"><a style="color:white">Master</a></li>
+          <li class="footer-li"><a style="color:white">Distribute</a></li>
+          <li class="footer-li"><a style="color:white">Promote</a></li>
+          <li class="footer-li"><a style="color:white">Collaborate</a></li>
+          <li class="footer-li"><a style="color:white">About</a></li>
+          <li class="footer-li"><a style="color:white">Pricing</a></li>
+          <li class="footer-li"><a style="color:white">Help</a></li>
+          <li class="footer-li"><a style="color:white">Blog</a></li>
+          <li class="footer-li"><a style="color:white">Jobs</a></li>
+        </ul>
+      </div>
+      <div style="width:18%;display:inline-block;padding-top:40px;vertical-align:top;">
+        <ul>
+          <li style="color:white;padding:6px 8px"><a>label</a></li>
+          <li class="footer-li"><a style="color:white">Pricing Terms</a></li>
+          <li class="footer-li"><a style="color:white">Term of service</a></li>
+          <li class="footer-li"><a style="color:white">Privacy Policy</a></li>
+          <li class="footer-li"><a style="color:white">Acceptable Use and Fair Usage Policy</a></li>
+        </ul>
+      </div>
+      <div style="width:18%;display:inline-block;padding-top:40px;vertical-align:top;">
+        <ul>
+          <li style="color:white;padding:6px 8px"><a>LANDR ACADEMY</a></li>
+          <li class="footer-li"><a style="color:white">What is Mastering?</a></li>
+          <li class="footer-li"><a style="color:white">How to Mix Music</a></li>
+          <li class="footer-li"><a style="color:white">How to Promote Your Music</a></li>
+          <li class="footer-li"><a style="color:white">Talk:Music</a></li>
+        </ul>
+      </div>
+      <div style="width:18%;display:inline-block;padding-top:40px;vertical-align:top;float:right">
+        <ul>
+          <li style="text-align:right;margin-right:10px" ><a style="color:white">Montreal</a></li>
+          <li style="text-align:right;margin-right:10px"><a style="color:white">160 St. Viateur East</a></li>
+          <li style="text-align:right;margin-right:10px"><a style="color:white">Montreal, Quebec, Canada, H2T 1A8</a></li><br>
+          <li style="text-align:right;margin-right:10px"><a style="color:white">Los Angeles</a></li>
+          <li style="text-align:right;margin-right:10px"><a style="color:white">1271 N Clark Street</a></li>
+          <li style="text-align:right;margin-right:10px"><a style="color:white">CA, 90069</a></li>
+          <li style="text-align:right;margin-right:10px"><a style="color:white">USA</a></li>
+        </ul>
+      </div>
     </div>
 
   </body>
