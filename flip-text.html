@@ -1,0 +1,133 @@
+<html>
+
+  <head>
+
+    <style>
+    body {
+      background-color: #222;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font: 400 16px/1.4em sans-serif;
+      height: 100vh;
+      width: 100vw;
+      }
+
+      .obama {
+      color: #000;
+      font: 200 13.5em/.85em impact;
+      height: 2.5em;
+      padding: .1em;
+      position: relative;
+      text-align: right;
+      width: 1.5em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      }
+      .obama:before, .obama:after {
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      }
+      .obama:before {
+      background-image: inherit;
+      background-size: cover;
+      -webkit-box-shadow: -0.5em -0.5em 5em -0.5em rgba(231, 0, 9, 0.5), 0.5em 0.5em 5em -0.5em #01253d;
+              box-shadow: -0.5em -0.5em 5em -0.5em rgba(231, 0, 9, 0.5), 0.5em 0.5em 5em -0.5em #01253d;
+      width: 200%;
+      }
+      .obama:after {
+      background-color: #fff;
+      width: 100%;
+      }
+      .obama-clip {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Barack_Obama_at_White_House_gun_violence_meeting.jpg/1280px-Barack_Obama_at_White_House_gun_violence_meeting.jpg);
+      background-size: cover;
+      background-position: left top;
+      background-repeat: no-repeat;
+      }
+
+      body {
+      background-color: #222;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font: 400 3.5vw/1.4em sans-serif;
+      height: 100vh;
+      width: 100vw;
+      }
+
+      .container {
+      -webkit-box-shadow: 1em 1em 10em -0.5em #01253d, -0.5em -0.5em 10em -0.5em rgba(231, 0, 9, 0.5);
+              box-shadow: 1em 1em 10em -0.5em #01253d, -0.5em -0.5em 10em -0.5em rgba(231, 0, 9, 0.5);
+      height: 20em;
+      margin: 1em;
+      max-width: 20em;
+      overflow: hidden;
+      width: 100%;
+      }
+      .container .obama {
+      color: #000;
+      font: 200 7.4em/.85em 'Oswald', sans-serif;
+      height: 100%;
+      margin: 0;
+      padding: .05em .2em .1em .1em;
+      position: relative;
+      text-align: right;
+      width: 1.35em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      }
+      .container .obama:before, .container .obama:after {
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      }
+      .container .obama:before {
+      background-image: inherit;
+      background-size: cover;
+      -webkit-box-shadow: -0.5em -0.5em 5em -0.5em rgba(231, 0, 9, 0.5), 0.5em 0.5em 5em -0.5em #01253d;
+              box-shadow: -0.5em -0.5em 5em -0.5em rgba(231, 0, 9, 0.5), 0.5em 0.5em 5em -0.5em #01253d;
+      width: calc(200% - .2em);
+      }
+      .container .obama:after {
+      background-color: #fff;
+      width: 100%;
+      }
+      .container .obama-clip {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Barack_Obama_at_White_House_gun_violence_meeting.jpg/1280px-Barack_Obama_at_White_House_gun_violence_meeting.jpg);
+      background-size: cover;
+      background-position: left top;
+      background-repeat: no-repeat;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="obama obama-clip">YES HE DID</div>
+    </div>
+
+  </body>
+
+</html>
